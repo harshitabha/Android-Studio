@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    * Project by Harshita Bhardwaj, Sreeja Pagireddy, Manusri Allam
+    * Last Edited 8-26-2021
+    * Business: A smoothie shop
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:padding="16dp" >
+
+    <!--The name of our business-->
+    <TextView
+        android:id="@+id/name"
+        android:text="🍹SmoothSips🍹"
+
+        android:fontFamily="@font/playball"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <!--layout to hold the pictures-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:id="@+id/smoothies">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/smootie_2" />
+
+        <!--pink smoothie-->
+
+        <!--chocolate smoothie-->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+
+            android:scaleType="centerCrop"
+            tools:srcCompat="@drawable/smootie" />
+    </LinearLayout>
+
+    <!--About Us Label-->
+    <TextView
+        android:text="A Little About Us"
+        android:id="@+id/aboutUs_Label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/smoothies"
+        android:layout_marginTop="16dp"
+
+        android:textColor="#d46eba"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/lobster"/>
+
+    <!--Business's Description-->
+    <TextView
+        android:id="@+id/description"
+        android:text="Get your organic smoothies at SmoothSips. From fruity smoothies to chocolaty filled ones we have something for everyone. Don't be shy and give us a try."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/aboutUs_Label"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!--Address Label-->
+    <TextView
+        android:text="Where You Can Find Us:"
+        android:id="@+id/address_label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/description"
+        android:layout_marginTop="12dp"
+
+        android:textColor="#d46eba"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/lobster"/>
+
+    <!--Business's Address-->
+    <TextView
+        android:text="1668 Sweets Plaza, Strawberry Land, Smoothtopia"
+        android:id="@+id/address"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/address_label"
+        android:layout_marginTop="8dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <!--Operating Hours Label-->
+    <TextView
+        android:text="Operating Hours:"
+        android:id="@+id/hours_Label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/address"
+
+        android:textColor="#d46eba"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/lobster"/>
+
+    <!--Operating Hours-->
+    <TextView
+        android:text="Every Monday to Friday 9 am - 6 pm"
+        android:id="@+id/hours"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/hours_Label"
+        android:layout_marginTop="8dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <!--Contact Info Label-->
+    <TextView
+        android:text="Contacting Us:"
+        android:id="@+id/contact_Label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/hours"
+        android:layout_marginTop="12dp"
+
+        android:textColor="#d46eba"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/lobster"/>
+
+    <!--Phone Number-->
+    <TextView
+        android:text="Phone Number: (123)-456-7890"
+        android:id="@+id/number"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/contact_Label"
+        android:layout_marginTop="8dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <!--Email-->
+    <TextView
+        android:text="Email: customersupport@smoothsips.com"
+        android:id="@+id/email"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/number"
+        android:layout_marginTop="8dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <!--Website-->
+    <TextView
+        android:text="Website: smoothsips.com"
+        android:id="@+id/website"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/email"
+        android:layout_marginTop="8dp"
+
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <!--Image Credit-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/roboto_medium"
+
+        android:text="Both photos by Claudia Soares on Unsplash"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
