@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean checkWinner(){
         boolean winnerResult = false;
         for(int [] winningPosition : winningPositions){
-
+            
             // if any of the winning positions given in the array match
             // and the buttons don't have a value of 2 there is a winner
             if (gameState[winningPosition[0]] == gameState[winningPosition[1]] &&
@@ -171,4 +171,3 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 }
-

@@ -220,6 +220,3 @@
         android:textStyle="bold" />
 
 </RelativeLayout>
-
-
-
