@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!--Creating the progress bar to show how many questions are left-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:progressDrawable="@drawable/progress_bar_bg"/>
+
+    <!-- TextView to qisplay the question-->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="60sp"
+        android:gravity="center"
+        android:text="Question"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <!--Ans choice 1-->
+    <Button
+        android:id="@+id/choice0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:background="@drawable/trans_border_btn_padding"
+        android:textSize="35sp" />
+
+    <!--Ans choice 2-->
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/trans_border_btn_padding"
+        android:textSize="35sp" />
+
+    <!--Ans choice 3-->
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@null"
+        android:background="@drawable/trans_border_btn_padding"
+        android:textSize="35sp" />
+
+    <!--Ans choice 4-->
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice2"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/transparent_btn_border"
+        android:textSize="35sp" />
+
+    <!--Submit/next question method-->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
