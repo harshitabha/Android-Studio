@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:progressDrawable="@drawable/progress_bar_bg"/>
+        android:progressDrawable="@drawable/progress_bar_bg" />
 
     <!-- TextView to qisplay the question-->
     <TextView
@@ -30,14 +31,14 @@
 
     <!--Ans choice 1-->
     <Button
-        android:id="@+id/choice0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/question"
         android:layout_marginTop="40dp"
-        android:textColor="@color/black"
-        android:background="@drawable/trans_border_btn_padding"
-        android:textSize="35sp" />
+        android:textSize="35dp"
+        android:id="@+id/choice0"
+        android:backgroundTint="#d4d4d4"
+        android:textColor="@color/black"/>
 
     <!--Ans choice 2-->
     <Button
@@ -46,8 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/choice0"
         android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:background="@drawable/trans_border_btn_padding"
         android:textSize="35sp" />
 
     <!--Ans choice 3-->
@@ -57,9 +56,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/choice1"
         android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:backgroundTint="@null"
-        android:background="@drawable/trans_border_btn_padding"
         android:textSize="35sp" />
 
     <!--Ans choice 4-->
@@ -69,8 +65,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/choice2"
         android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:background="@drawable/transparent_btn_border"
         android:textSize="35sp" />
 
     <!--Submit/next question method-->
@@ -80,8 +74,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="30dp"
-        android:text="Submit"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:text="Check Answer"
+        android:padding="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:backgroundTint="#c471ed"/>
 
 </RelativeLayout>
