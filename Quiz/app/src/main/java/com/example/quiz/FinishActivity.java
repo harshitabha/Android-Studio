@@ -1,5 +1,6 @@
 package com.example.quiz;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,7 @@ public class FinishActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.finish);
 
         score = (TextView) findViewById(R.id.score);
-        score.setText(MainActivity.getScore() + "/" + MainActivity.getNumQs());
+        score.setText(QuizActivity.getScore() + "/" + QuizActivity.getNumQs());
 
         reset = (Button) findViewById(R.id.reset);
         reset.setOnClickListener(this);
@@ -28,7 +29,7 @@ public class FinishActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        Intent reset = new Intent(FinishActivity.this, MainActivity.class);
+        Intent reset = new Intent(FinishActivity.this, QuizActivity.class);
         startActivity(reset);
     }
 }
