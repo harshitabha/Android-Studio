@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-//<!-- Created by Harshita Bhardwaj and Gerald Kyro Tungol-->
 
 /*Creates a Question or mathematical problem along with the answer and three fake answers to choose from.*/
 public class Test {
@@ -66,8 +65,12 @@ public class Test {
 
     /*receives an answer and checks if it is correct
     This should be called with the submit button*/
-    public double getAns(){
-        return ans;
+    public boolean checkAnswer(double check){
+        if(check==ans){
+            correct++;
+            return true;
+        }
+        return false;
     }
     /*Generates other answers for the questions
     called when pressed next or start*/
